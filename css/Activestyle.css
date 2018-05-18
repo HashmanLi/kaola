@@ -758,6 +758,10 @@ tr {
 .act-module {
   position: relative; }
 
+.lineOfOne, .lineOfTwo, .lineOfThree, .lineOfFour, .lineOfFive, .newLineOfOne, .newLineOfTwo, .maizeng-3, .maizeng-4, .maizeng-5, .tabChange, .brandSec, .m-drainage {
+  margin: 0 auto;
+  width: 1000px; }
+
 .lineOfFive {
   padding: 10px 0 17px 0; }
 
@@ -818,6 +822,47 @@ tr {
   height: 14px;
   line-height: 14px; }
 
+.detailWrap .proComment .data .percentStar {
+  float: left;
+  width: 70px;
+  height: 100%; }
+
+.proComment .data .emptyStar, .detailWrap .proComment .data .fullStar {
+  display: inline-block;
+  float: left;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: "iconfont";
+  font-size: 13px;
+  overflow: hidden; }
+
+.detailWrap .proComment .data .fullStar {
+  color: #d61640;
+  zoom: 1; }
+
+.percentStar .w10 {
+  width: 70px; }
+
+.detailWrap .proComment .data .emptyStar {
+  float: left;
+  direction: rtl;
+  color: #fff;
+  zoom: 1; }
+
+.detailWrap .proComment .data .emptyStar, .detailWrap .proComment .data .fullStar {
+  display: inline-block;
+  float: left;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: "iconfont";
+  font-size: 13px;
+  overflow: hidden; }
+
+.percentStar .e10 {
+  width: 0px; }
+
 .lineOfFive .detailWrap .proComment .data {
   margin: 0 12px;
   height: 32px;
@@ -855,3 +900,78 @@ tr {
   background: #fff;
   word-wrap: break-word;
   word-break: break-all; }
+
+/*物品数据*/
+.lineOfFive .detailWrap .tit {
+  margin-top: 10px;
+  font-size: 12px;
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden; }
+
+.lineOfFive .detailWrap .tags {
+  margin-top: 10px;
+  max-height: 20px;
+  overflow: hidden; }
+
+.lineOfFive .detailWrap .w-price {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  line-height: 22px;
+  max-height: 25px;
+  overflow: hidden; }
+
+.lineOfFive .detailWrap .cart-btn, .lineOfFive .detailWrap .to-start {
+  padding: 0 6px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  bottom: 13px;
+  right: 12px; }
+
+.cart-btn {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  background-color: #e31436;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px; }
+
+.lineOfFive .detailWrap .tit a, .detailWrap .tit a:hover {
+  color: #333; }
+
+.detailWrap .tit .titLink {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  font-weight: bold; }
+
+.lineOfFive .detailWrap .tags .tagItem {
+  float: left;
+  padding: 0 4px;
+  margin-right: 5px;
+  border: 1px dotted #e31436;
+  vertical-align: 6px;
+  font-size: 12px;
+  color: #e31436; }
+
+.lineOfFive .detailWrap .w-price strong {
+  margin-right: 6px;
+  color: #e31436;
+  font-weight: bold;
+  font-size: 18px; }
+
+.lineOfFive .detailWrap .w-price .symbol {
+  font-weight: normal;
+  line-height: 12px;
+  font-size: 12px; }
+
+.w-price .symbol {
+  display: inline-block;
+  margin-right: 1px;
+  font-size: 16px; }
