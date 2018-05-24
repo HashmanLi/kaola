@@ -1,0 +1,529 @@
+@charset "UTF-8";
+body {
+  min-width: 1090px; }
+
+body, button, input, select, textarea {
+  font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB",\5FAE\8F6F\96C5\9ED1,tahoma,simsun,\5b8b\4f53; }
+
+html, body {
+  _height: 100%;
+  min-height: 100%; }
+
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+  margin: 0;
+  padding: 0;
+  outline: none; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  color: #333;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+user agent stylesheet
+body {
+  display: block;
+  margin: 8px; }
+
+html, body {
+  color: #333;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/*------header-------*/
+#docHead {
+  border-bottom: 1px solid #e8e8ea; }
+
+#docHead {
+  position: relative;
+  height: 100px;
+  background: #fff;
+  z-index: 103; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+#docHeadWrap {
+  width: 1000px; }
+
+#docHeadWrap {
+  position: relative;
+  zoom: 1;
+  height: 100px;
+  margin: 0 auto; }
+
+#docHead .logokaola {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 330px;
+  height: 60px;
+  line-height: 60px;
+  outline: none;
+  cursor: pointer;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url(http://haitao.nos.netease.com/264271ddbec447288f17aef71119b1f4.png?imageView&thumbnail=220x0&quality=85&v=1); }
+
+#topimg {
+  left: 458px;
+  height: 100px;
+  width: 504px;
+  background-image: url(//haitao.nos.netease.com/c5bc5b4005c9413888f7d1127a734609.jpg?imageView&thumbnail=504x0&quality=85&v=1); }
+
+#topimg {
+  position: absolute;
+  left: 458px;
+  top: 0; }
+
+.login-banner {
+  background-color: #f8f8f8;
+  background-position: center top;
+  background-repeat: no-repeat; }
+
+.m-loginBody {
+  position: relative;
+  width: 1000px;
+  height: 520px;
+  margin: 0 auto; }
+
+.m-loginBody .hotarea {
+  position: absolute;
+  background-image: url(../../../images/blank.gif);
+  left: 10px;
+  top: 109px;
+  width: 400px;
+  height: 280px; }
+
+.m-loginBody .m-loginWrap {
+  position: absolute;
+  z-index: 2;
+  right: 40px;
+  top: 48px;
+  width: 350px;
+  border: 1px solid #eaeaea;
+  background-color: #fff; }
+
+.m-loginWrap {
+  font-size: 12px; }
+
+.f-cb, .clearfix {
+  zoom: 1; }
+
+/*------表单部分------*/
+.m-loginBody .loginForm {
+  float: left; }
+
+body .m-loginshow {
+  z-index: 2000; }
+
+.m-loginshow .top {
+  position: relative;
+  width: 350px;
+  height: 52px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  line-height: 52px;
+  color: #333; }
+
+.m-loginshow .top .line {
+  position: absolute;
+  top: 17px;
+  left: 175px;
+  width: 0px;
+  height: 20px;
+  border-right: solid 1px #ddd; }
+
+.m-loginshow .top div:hover {
+  color: #e31436; }
+
+.m-loginshow .top div {
+  float: left;
+  width: 175px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold; }
+
+.m-loginshow-1 .loginbox, .m-loginshow-2 .loginbox2 {
+  display: block;
+  position: static; }
+
+.m-loginshow .urswarp, .m-loginshow .regwrap {
+  display: block;
+  position: absolute;
+  top: 46px; }
+
+.ph-loading {
+  height: 200px;
+  background: url(//haitao.nos.netease.com/f98c83b….gif) no-repeat center; }
+
+iframe {
+  display: block; }
+
+.g-bd {
+  width: 350px;
+  border-radius: 0;
+  background-color: transparent; }
+
+.g-bd {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #fff; }
+
+.m-cnt {
+  width: 270px;
+  padding: 20px 40px 15px;
+  background-color: #fff; }
+
+.m-cnt .inputbox {
+  height: 34px;
+  line-height: 30px;
+  border-color: #d5d5d5;
+  border-radius: 2px; }
+
+.m-cnt .inputbox {
+  z-index: 19;
+  position: relative;
+  margin-bottom: 0px;
+  border: 1px solid #c5cddb;
+  background: #fff;
+  font-size: 12px;
+  line-height: 30px; }
+
+.m-cnt .u-logo {
+  width: 17px;
+  padding: 0 11px; }
+
+.m-cnt .u-logo {
+  float: left;
+  width: 21px;
+  text-align: center;
+  padding: 0 5px 0 10px; }
+
+.m-cnt .u-logo, .m-cnt .u-input, .m-cnt .u-tip {
+  height: 100%; }
+
+.m-cnt .u-logo {
+  width: 17px;
+  padding: 0 11px; }
+
+.m-cnt .u-logo {
+  float: left;
+  width: 21px;
+  text-align: center;
+  padding: 0 5px 0 10px; }
+
+.m-cnt .u-logo, .m-cnt .u-input, .m-cnt .u-tip {
+  height: 100%; }
+
+.u-logo-img1, .u-logo-img2, .u-logo-img3, .u-tab .tab0, .u-tab .tab1 {
+  background: url(http://ursdoccdn.nosdn.127.net/webzj_cdn101/sprite_61fbe151ab715649c6b7c4ec39156201.png) no-repeat; }
+
+.m-cnt .u-logo .u-logo-img1 {
+  background-position: -382px -386px; }
+
+.m-cnt .u-logo div {
+  width: 17px;
+  height: 18px;
+  margin-top: 8px; }
+
+.m-cnt .u-logo div {
+  display: inline-block;
+  width: 22px;
+  height: 24px;
+  margin-top: 10px; }
+
+.m-cnt #login-form .u-label {
+  width: 188px; }
+
+.m-cnt .u-label {
+  position: absolute;
+  width: 306px;
+  z-index: 100;
+  top: 0;
+  left: 10px;
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: text; }
+
+.m-cnt .u-input {
+  height: 30px;
+  margin: 2px 0; }
+
+.m-cnt .u-input {
+  position: relative;
+  float: left; }
+
+.m-cnt .u-input input {
+  padding-left: 0px;
+  height: 30px;
+  width: 180px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  background: #fff;
+  color: #333;
+  border: 0; }
+
+body, textarea, input, button, select, keygen, legend {
+  font: 12px/1.14 "Microsoft YaHei","微软雅黑","宋体",helvetica,"Hiragino Sans GB";
+  color: #666;
+  outline: 0; }
+
+.m-cnt #login-form .m-sug {
+  width: 268px;
+  top: 33px;
+  left: -40px;
+  max-height: 150px; }
+
+#login-form .m-sug {
+  left: -37px;
+  border-radius: 0 0 4px 4px; }
+
+.m-cnt .m-sug {
+  position: absolute;
+  z-index: 1000;
+  top: 42px;
+  left: -1px;
+  overflow: hidden;
+  width: 318px;
+  border: 1px solid #ccc;
+  background: #fafbfd;
+  font-size: 12px; }
+
+.fur-change-email {
+  position: relative;
+  width: 320px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px; }
+
+.m-cnt .u-logo .u-logo-img2 {
+  background-position: -386px -444px; }
+
+.m-cnt .m-nerror {
+  margin-top: 6px; }
+
+.m-nerror.f-dn {
+  display: block !important;
+  visibility: hidden;
+  height: 17px;
+  overflow: hidden; }
+
+.m-cnt .m-nerror {
+  top: -31px;
+  left: -1px;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 0;
+  margin-bottom: 0px;
+  margin-top: 16px; }
+
+.loginbox {
+  margin-top: 7px;
+  margin-bottom: 10px; }
+
+a, a:active, a:hover, a:visited {
+  text-decoration: none; }
+
+.u-loginbtn {
+  height: 36px;
+  background-color: #e31436;
+  color: #fff;
+  border-radius: 2px;
+  line-height: 36px;
+  font-size: 14px; }
+
+.u-loginbtn {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-align: center; }
+
+.m-cnt .m-unlogin {
+  padding: 0 0 15px 0; }
+
+.m-cnt .m-unlogin {
+  padding: 2px 0 9px 0;
+  font-size: 0;
+  height: 16px;
+  line-height: 16px; }
+
+.m-cnt .m-unlogin .b-unlogn {
+  border-right: none; }
+
+.m-cnt .m-unlogin .b-unlogn {
+  display: block;
+  width: 104px;
+  float: left;
+  border-right: solid 1px #ccc;
+  margin-right: 8px; }
+
+.m-cnt .m-unlogin .b-unlogn .u-checkbox-select {
+  background-position: -330px -92px; }
+
+.m-cnt .m-unlogin .b-unlogn .u-checkbox {
+  display: block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  border: solid 1px #aaa;
+  color: #999;
+  font-size: 12px; }
+
+.headimg, .u-closebtn, .u-checkbox, .u-success, .etimg, .third, .ferrortail, .ferrortail2, .ferrortail3, .btn-qrcode, .i-qrsucc, .cap-box .cap-close {
+  background: url(//ursdoccdn.nosdn.127.net/webzj_cdn101/sprite_61fbe151ab715649c6b7c4ec39156201.png) no-repeat; }
+
+.m-cnt .m-unlogin label, .m-cnt .m-unlogin input {
+  cursor: pointer; }
+
+.m-cnt .un-login, .m-cnt .zc-un-login {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  opacity: 0; }
+
+input {
+  background: #fff; }
+
+input {
+  padding-left: 0;
+  color: #333;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 42px; }
+
+.m-cnt .m-unlogin .b-unlogn label {
+  display: block;
+  float: left;
+  height: 16px;
+  padding-left: 8px;
+  font-size: 12px;
+  color: #999;
+  line-height: 17px; }
+
+.m-cnt .m-unlogin label, .m-cnt .m-unlogin input {
+  cursor: pointer; }
+
+.m-cnt .m-unlogin .forgetpwd, .m-cnt .m-unlogin .forgetpwdReg {
+  float: right; }
+
+.m-cnt .m-unlogin .forgetpwd, .m-cnt .m-unlogin .forgetpwdReg {
+  height: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #999;
+  font-size: 12px;
+  line-height: 16px; }
+
+.m-loginshow .bottom {
+  width: 270px;
+  height: 20px;
+  padding: 10px 40px;
+  border-top: 1px solid #ddd;
+  background-color: #f8f8f8;
+  font-size: 14px; }
+
+.m-loginshow .thirdlogin {
+  float: left;
+  width: 160px; }
+
+ol, ul {
+  list-style: none; }
+
+.m-loginshow .thirdicon {
+  position: relative;
+  display: block;
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px; }
+
+.u-icn, .w-icon, #fslist .topbg, #fslist .btmbg, #rightBar .redpackage, .m-slogn, .m-slogn-new, .m-shopcartnew .wrap, .m-loginshow .closeLayer {
+  background: url(http://mm.bst.126.net/images/index/icon1.png?832edc2%E2%80%A6) no-repeat; }
+
+.w-icon-29 {
+  width: 22px;
+  height: 22px;
+  background-position: -760px -401px;
+  display: inline-block; }
+
+.w-icon-29-1 {
+  background-position: -792px -401px; }
+
+.w-icon-29-2 {
+  background-position: -824px -401px; }
+
+.w-icon-29-3 {
+  background-position: -856px -401px; }
+
+.m-loginshow .gotoreg {
+  display: block;
+  float: right;
+  width: 105px;
+  color: #e31436;
+  line-height: 22px;
+  cursor: pointer;
+  font-size: 13px; }
+
+.m-loginshow .arrow {
+  margin-left: 5px;
+  height: 22px;
+  background-position: -899px -402px;
+  display: inline-block; }
+
+.w-icon-30 {
+  width: 14px;
+  height: 14px;
+  background-position: -899px -406px; }
+
+/*footer部分*/
+.foot {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 14px;
+  color: #666; }
+
+#aboutNEST {
+  position: relative;
+  padding: 20px 0;
+  background: #333;
+  line-height: 26px;
+  text-align: center; }
+
+.foot #aboutNEST {
+  background: #fff;
+  padding: 0;
+  color: #666; }
+
+.foot #aboutNEST a {
+  color: #666; }
+
+.foot #aboutNEST span {
+  margin: 0 20px; }
+
+.foot .m-license, .foot a span {
+  font-size: 12px;
+  color: #999; }
+
+#KXYZ img {
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px; }
+
+.u-shield img {
+  height: 30px;
+  margin: 5px 0 0 10px; }

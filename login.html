@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body id="index-netease-com">
+    <script src="libs/jquery-3.3.1.js"></script>
+    <script src="libs/login.js"></script>
+    <script>
+        $(function(){
+            $("#btn").on("click",function(){
+                this.username = $("#username").val();
+                this.password = $("#password").val();
+                if(this.username==""||this.password==""){alert("请输入帐号密码！");return 0;}
+            //    var userlogin = {
+            //         "username":this.username,
+            //         "password":this.password
+            //     };
+            // this.username = JSON.stringify(this.username);
+                // this.username = this.username.replace(/\*[%40]/g,"@");
+            // console.log(myStorage.getItem("user"),this.username);
+           
+                if(myStorage.getItem("user")==this.username){
+                    // alert("欢迎"+this.username);
+                    // location.href="http://localhost:83/dist/Activeindex.html"
+                }else{
+                    alert("用户不存在，请先注册！");
+                   
+                } 
+            })
+        })
+    </script>
+    <header id="docHead" class="j-indexTopFixed">
+        <div id="docHeadWrap">
+            <a href="" class="logokaola"></a>
+            <div id="topimg"></div>
+        </div>
+    </header>
+    <div class="login-banner" style="background-image: url(//haitao.nos.netease.com/1cdfe5g6437_1920_520.jpg?imageView&thumbnail=1920x0&quality=90);">
+        <div class="m-loginBody">
+            <a href="" class="hotarea"></a>
+            <div class="m-loginWrap clearfix" id="loginwrap" style="width:350px;">
+                <!--表单部分-->
+                <div class="loginForm">
+                    <div class="m-loginshow j-tag m-loginshow-1">
+                        <div class="loginwrap">
+                            <div class="top">
+                                <div class="name head1 j-tag">手机号登录</div>
+                                <span class="line">&nbsp;</span>
+                                <div class="name head2 j-tag">邮箱登录</div>
+                            </div>
+                            <div id="loginbox" class="ph-loading urswarp loginbox" style="height: 298px; width: 350px;">
+                                <div class="g-bd" id="cnt-box">
+                                    <div class="m-cnt">
+                                        <form id="login-form">
+                                            <div class="m-container">
+                                                <div class="inputbox">
+                                                    <div class="u-logo">
+                                                        <div class="u-logo-img1"></div>
+                                                    </div>
+                                                    <div class="u-input box ">
+                                                        <!-- <label for="" class="u-label f-dn" style="display: block;">网易邮箱账号</label> -->
+                                                        <input id="username" type="text" value="15666589785"  name="email" autocomplete="off"  placeholder="网易邮箱帐号">
+                                                        <div class="m-sug" style="visibility: hidden;"></div>
+                                                        <span class="pr-domain j-prdomain f-dn"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="fur-change-email"></div>
+                                                <div class="inputbox">
+                                                    <div class="u-logo">
+                                                        <div class="u-logo-img2"></div>
+                                                    </div>
+                                                    <div class="u-input box">
+                                                        <input id="password" value="123456" type="password" name="password" tabindex="2" spellcheck="false" data-required="true" autocomplete="new-password" data-placeholder="密码" placeholder="密码" maxlength="50">
+                                                    </div>
+                                                    <div class="u-tip"></div>
+                                                </div>
+                                                <div class="m-nerror f-dn"></div>
+                                                <div class="f-cb loginbox">
+                                                    <a href="http://localhost:83/dist/Activeindex.html" id="btn" class="u-loginbtn btncolor tabfocus btndisabled">登&nbsp;&nbsp;录</a>
+                                                </div>
+                                                <div class="m-unlogin">
+                                                    <div class="b-unlogn j-unlogn">
+                                                        <span class="u-checkbox tabfocus u-checkbox-select">
+                                                            <input type="checkbox" class="un-login" id="un-login">
+                                                        </span>
+                                                        <label for="un-login">10天免登录</label>
+                                                    </div>
+                                                    <a href="" class="forgetpwd j-redirect">忘记密码？</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="bottom">
+                                        <ul class="thirdlogin">
+                                            <li class="thirdicon j-third">
+                                                <a href="" class="w-icon w-icon-29"></a>
+                                            </li>
+                                            <li class="thirdicon j-third">
+                                                <a href="" class="w-icon w-icon-29 w-icon-29-1"></a>
+                                            </li>
+                                            <li class="thirdicon j-third">
+                                                <a href="" class="w-icon w-icon-29 w-icon-29-2"></a>
+                                            </li>
+                                            <li class="thirdicon j-third">
+                                                <a href="" class="w-icon w-icon-29 w-icon-29-3"></a>
+                                            </li>
+                                        </ul>
+                                        <a href="register.html" class="gotoreg j-tag">快捷注册
+                                            <span class="arrow w-icon w-icon-30">&nbsp;</span>
+                                        </a>
+                                        
+                                    </div>
+                                </div>    
+                            </div>
+            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div id="aboutNEST">
+			<a href="">About NetEase</a>
+			<span class="sep">|</span>
+			<a href="">公司简介</a>
+			<span class="sep">|</span>
+			<a href="">联系方法</a>
+			<span class="sep">|</span>
+			<a href="">友情链接</a>
+			<span class="sep">|</span>
+			<a href="">招聘信息</a>
+			<span class="sep">|</span>
+			<a href="">客户服务</a>
+			<span class="sep">|</span>
+			<a href="">隐私政策</a>
+			<span class="sep">|</span>
+			<a href="">网络营销</a>
+			<span class="sep">|</span>
+			<a href="">网站地图</a>
+			<span class="sep">|</span>
+			<a href="">网易考拉海购</a>
+			<br>
+			<span class="m-license">网络文化经营许可证：浙网文[2016]0155-055号</span>
+			<span class="m-license">增值电信业务经营许可证：浙B2-20160288</span>
+			<span class="m-license">
+				<a href="//www.kaola.com/activity/detail/26856.shtml">自营经营者信息</a>
+			</span>
+			<br>
+			<a href="" class="m-license m-license-1">
+				<img src="//haitao.nos.netease.com/f28aa8ee818a42bf832341f605eccefb.png" alt="">
+			</a>
+			<a href=""><span >浙公网安备 33010802002216号</span></a>
+			<span class="m-license">网易公司版权所有©1997-2018</span>
+			<a href="">
+				<span >互联网药品信息服务资格证书编号（浙）-2017-0027</span>
+			</a>
+			<div class="f-tac">
+				<a href="">
+					<img style="height:30px; margin:5px 15px 0 0;" src="//haitao.nos.netease.com/86998579-754f-4f2c-b800-5dae6404a1f6.png" alt="">
+				</a>
+				<span id="KXYZ">
+					<a href="">
+						<img src="//haitao.nos.netease.com/d720d83b55a04b6f932ea845c673c5bf.png" alt="">
+					</a>
+				</span>
+				<a href="" class="u-shield">
+					<img src="//haitao.nos.netease.com/d071c0de-5360-4dcb-915a-f9f9bb62a9d5.gif" alt="">
+				</a>
+			</div>
+			
+		</div>
+    </div>
+    
+</body>
+</html>
