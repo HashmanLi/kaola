@@ -58,83 +58,6 @@
 					})
 				}
 			})
-			//多级菜单
-			// function trytre(elebox){ 
-			// 	$(elebox).has("ul").mouseover(function(){ 
-			// 	$(this).children("ul").css("display","block");  
-			// 	})
-			// 	.mouseout(function () { 
-			// 	$(this).children("ul").css("display","none"); 
-			// 	}) 
-			// 	} 
-			//三级（有bug）
-			function shady(elebox,ele){
-				var time;
-			+function(){
-					$(elebox)
-					.on("mouseenter",function(event){
-						clearTimeout(time);
-					$(event.target).siblings(ele).css({
-						display:"block",
-					})
-				})
-					$(elebox).on("mouseleave",function(event){
-					time = setTimeout(function(){
-						$(event.target).siblings(ele).css({
-							display:"none",
-						})
-					}.bind(this),150)	
-				})
-
-					$(ele)
-					.on("mouseenter",function(event){
-					clearTimeout(time);
-					$(ele)
-					.css({
-						display:"block",
-					})	
-				})
-				
-					$(ele).on("mouseleave",function(event){
-						$(ele).css({display:"none"})
-				})
-				}.bind(this)()
-			}
-
-
-			//三级测试
-			function shady1(elebox,ele){
-				var time;
-			+function(){
-					$(elebox)
-					.on("mouseenter",function(event){
-						clearTimeout(time);
-					$(event.target).children(ele).css({
-						display:"block",
-					})
-				})
-					$(elebox).on("mouseleave",function(event){
-					time = setTimeout(function(){
-						$(event.target).children(ele).css({
-							display:"none",
-						})
-					}.bind(this),150)	
-				})
-
-					$(ele)
-					.on("mouseenter",function(event){
-					clearTimeout(time);
-					$(event.target)
-					.css({
-						display:"block",
-					})	
-				})
-				
-					$(ele).on("mouseleave",function(event){
-						$(event.target).css({display:"none"})
-				})
-				}.bind(this)()
-			}
 			//头部菜单
 			var time;
 		    $(".topNavHolder").on("mouseenter",function(event){
@@ -170,54 +93,92 @@
 					"z-index":"104"
 				})
 			})
+			//多级菜单
+			// function trytre(elebox){ 
+			// 	$(elebox).has("ul").mouseover(function(){ 
+			// 	$(this).children("ul").css("display","block");  
+			// 	})
+			// 	.mouseout(function () { 
+			// 	$(this).children("ul").css("display","none"); 
+			// 	}) 
+			// 	} 
+			//三级（有bug）
+			function shady(elebox,ele){
+				var time;
+			+function(){
+					$(elebox)
+					.on("mouseenter",function(event){
+						clearTimeout(time);
+					$(event.target).siblings(ele).css({
+						display:"block",
+					})
+				})
+					$(elebox).on("mouseleave",function(event){
+					time = setTimeout(function(){
+						$(event.target).siblings(ele).css({
+							display:"none",
+						})
+					}.bind(this),150)	
+				})
+					$(ele)
+					.on("mouseenter",function(event){
+					clearTimeout(time);
+					$(ele)
+					.css({
+						display:"block",
+					})	
+				})
+					$(ele).on("mouseleave",function(event){
+						$(ele).css({display:"none"})
+				})
+				}.bind(this)()
+			}
+			//三级测试
+			function shady1(elebox,ele){
+				var time;
+			+function(){
+					$(elebox)
+					.on("mouseenter",function(event){
+						clearTimeout(time);
+						console.log(event.target)
+					$(event.target).children(ele).css({
+						
+						display:"block",
+					})
+				})
+					$(elebox).on("mouseleave",function(event){
+					time = setTimeout(function(){
+						$(event.target).children(ele).css({
+							display:"none",
+						})
+					}.bind(this),150)	
+				})
+
+				// 	$(ele)
+				// 	.on("mouseenter",function(event){
+				// 	clearTimeout(time);
+				// 	$(event.target)
+				// 	.css({
+				// 		display:"block",
+				// 	})	
+				// })
+				
+				// 	$(ele).on("mouseleave",function(event){
+				// 		$(event.target).css({display:"none"})
+				// })
+				}.bind(this)()
+			}
+			
+			
+			
+			
 
 			shady(".topCatslevel","#topList");
-			shady(".shadowList",".miss_cat");
+			// shady(".shadowList",".miss_cat");
+			shady1(".shadowList",".miss_cat");
 			// // trytre(".topCatslevel")
 		})
-		
-//cookie测试
-// 	$(function(){		
-//     $("#part1").on("click",function(event){
-// 	this.iD = $(event.target).attr("goodsId");
-//        this.num = 1;
-//        this.opt = 
-//        {
-//            id:this.iD,
-//            num:this.num
-// 	   };
-// 	   console.log($.cookie('goodslist'));
-// 	   this.getcookie = $.cookie('goodslist');
-//     //    this.getcookie =  JSON.parse(this.getcookie);
-       
-//        if(!this.getcookie){
-//         var goodslist = [];
-//         goodslist.push(this.opt);
-//         $.cookie('goodslist',goodslist,{
-//             expires:7,
-//             path:'/',  
-//         })
-//         console.log(this.getcookie);
-//        }else{
-//            for(var i = 0 ;i<this.getcookie.length;i++){
-//                if(this.getcookie[i].iD == this.iD){
-//                 this.getcookie[i].num +=1;
-//                 $.cookie('goodslist',goodslist,{
-//                     expires:7,
-//                     path:'/',  
-//                 })
-//                }else{
-//                    this.getcookie.push(this.opt);
-//                    $.cookie('goodslist',goodslist,{
-//                     expires:7,
-//                     path:'/',
-//                 })
-//             }
-//         }
-//     } 
-// }.bind(this))
-	
-// })
+
 	</script>
 
 

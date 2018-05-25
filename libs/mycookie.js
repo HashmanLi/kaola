@@ -10,7 +10,7 @@ define(["jquery","cookie"],function(){
     }
     //document.cookie实现
    mycookie.prototype = {
-       constrocter:mycookie,
+       constructor:mycookie,
        init(){
         $(this.ele).on("click",function(event){
                this.id = $(event.target).attr("goodsid");

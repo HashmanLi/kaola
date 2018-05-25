@@ -127,6 +127,7 @@ a:hover {
   border-top: 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
   padding: 4px 15px 12px 14px;
+  z-index: 999;
   display: none; }
 
 .shadow .cnt {
@@ -270,12 +271,15 @@ address, caption, cite, code, dfn, em, th, var, i, b {
 .u-chk:checked {
   background-position: 0 0;
 }
+
 .m-cartbox .u-chk {
   margin: -6px 10px 0 12px;
 }
+
 .u-chk:checked {
   background-position: 0 -2px;
 }
+
 .u-chk {
   width: 17px;
   height: 18px;
@@ -284,6 +288,7 @@ address, caption, cite, code, dfn, em, th, var, i, b {
   -webkit-appearance: none;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABCCAYAAABetVadAAAAGXRFW…2ykqKSkhKiXpCQkCBJ84sXL0ZjYdSAYVkvIKdtUgFAgAEAzNeX0Aix8HMAAAAASUVORK5CYII=) no-repeat 0 -24px;
 }
+
 .u-cartlabel {
   display: inline-block;
   padding: 0 4px;
@@ -294,21 +299,26 @@ address, caption, cite, code, dfn, em, th, var, i, b {
   font-size: 12px;
   background-color: #333;
 }
+
 .m-cart .warename {
   font-weight: bold;
   font-size: 14px;
   color: #333;
 }
+
 .m-cart .goods {
   border: 1px solid #eaeaea;
 }
+
 ol, ul {
   list-style: none;
 }
+
 .m-goods .actitm:only-child, .m-goods .onlychild {
   margin-top: 0;
   border-top: none;
 }
+
 .m-goods .actitm {
   position: relative;
   zoom: 1;
@@ -316,6 +326,7 @@ ol, ul {
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
 }
+
 .m-goods .actitm .vline {
   position: absolute;
   left: 28px;
@@ -324,6 +335,7 @@ ol, ul {
   border-left: 1px dashed #ccc;
   z-index: 1;
 }
+
 .m-goods .actinfo {
   position: relative;
   padding: 10px 0 10px 80px;
@@ -331,13 +343,16 @@ ol, ul {
   height: 30px;
   line-height: 30px;
 }
+
 .f-cb, .clearfix {
   zoom: 1;
 }
+
 .u-actlabel.z-full {
   color: #fff;
   background-image: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQAB…yON+RqVrc/j3ftupXru2XbGzXY47lOGxYt1HyVpWss1a9RUtT2IHKksENZUsSysayFUkc0/9k=);
 }
+
 .u-actlabel {
   position: absolute;
   left: -1px;
@@ -353,32 +368,50 @@ ol, ul {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
 .m-goods .actitm .rule {
   width: 96%;
   font-size: 14px;
 }
+
 .f-fl, .fl {
   float: left;
 }
+
 .m-goods .crtrule {
   color: #e31436;
   font-size: 14px;
 }
+
 .f-vam, .f-vama * {
   vertical-align: middle;
 }
+
 .m-goods .gooditm {
   border-bottom: 1px solid #eaeaea;
   padding: 20px 0;
 }
+
 .m-goods .actgoods .gooditm {
   position: relative;
   border: 0;
 }
+
 .m-goods li .z-selected {
   background-color: #fffbf0;
 }
 
+
+.m-cartbox .col {
+  float: left;
+  padding: 0 10px;
+}
+
+.m-goods .gooditm .col {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+}
 .m-goods .gooditm .col0 {
   padding-right: 0;
   width: 37px;
@@ -386,46 +419,41 @@ ol, ul {
   z-index: 100;
   vertical-align: middle;
 }
-.m-goods .gooditm .col {
-  float: none;
-  display: table-cell;
-  vertical-align: top;
-}
-.m-cartbox .col {
-  float: left;
-  padding: 0 10px;
-}
+
+
+
 .m-goods .gooditm .u-chk {
   margin-right: 0;
   position: relative;
   z-index: 102;
 }
+
 .u-chk:checked {
   background-position: 0 0;
 }
+
 .m-cartbox .u-chk {
   margin: -6px 10px 0 12px;
 }
+
 .u-chk:checked {
   background-position: 0 -2px;
 }
+
 .u-chk {
   width: 17px;
   height: 18px;
   display: inline-block;
   zoom: 1;
-  -webkit-appearance: none;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAABCCAYAAABetVadAAAAGXRFW…2ykqKSkhKiXpCQkCBJ84sXL0ZjYdSAYVkvIKdtUgFAgAEAzNeX0Aix8HMAAAAASUVORK5CYII=) no-repeat 0 -24px;
 }
+
 .m-goods .gooditm .col2 {
   padding: 0 0px 0 0;
   width: 510px;
 }
-.m-goods .gooditm .col {
-  float: none;
-  display: table-cell;
-  vertical-align: top;
-}
+
+
 .m-goods .imgwrap {
   float: left;
   position: relative;
@@ -433,8 +461,65 @@ ol, ul {
   height: 80px;
   overflow: hidden;
 }
+
 .m-goods .imgwrap img {
   width: 100%;
+}
+
+img, input, select {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+.m-goods .txtwrap {
+  margin-left: 15px;
+  width: 220px;
+  padding-right: 30px;
+  float: left;
+}
+
+.m-goods .goodtlt {
+  height: 36px;
+  line-height: 18px;
+  overflow: hidden;
+  margin-top: -2px;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.m-goods .goodtlt a {
+  color: #333;
+  font-size: 12px;
+  display: block;
+}
+
+.m-goods .returninfo {
+  color: #999;
+  height: 20px;
+  padding-top: 2px;
+  margin-bottom: 2px;
+}
+
+.f-toe {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.m-goods .returninfo span {
+  vertical-align: middle;
+  color: #666;
+}
+.m-goods .returninfo img {
+  height: 14px;
 }
 img, input, select {
   vertical-align: middle;
@@ -442,27 +527,6 @@ img, input, select {
 }
 fieldset, img {
   border: 0;
-}
-.m-goods .txtwrap {
-  margin-left: 15px;
-  width: 220px;
-  padding-right: 30px;
-  float: left;
-}
-.m-goods .goodtlt {
-  height: 36px;
-  line-height: 18px;
-  overflow: hidden;
-  margin-top: -2px;
-}
-h1, h2, h3, h4, h5, h6, b {
-  font-size: 100%;
-  font-weight: normal;
-}
-.m-goods .goodtlt a {
-  color: #333;
-  font-size: 12px;
-  display: block;
 }
 .m-goods .returninfo {
   color: #999;
@@ -476,10 +540,207 @@ h1, h2, h3, h4, h5, h6, b {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.m-goods .goodtax {
+  line-height: 22px;
+  white-space: nowrap;
+}
+.m-goods .gooditm .col3 {
+  width: 88px;
+}
+
+.m-goods .oldprice {
+  color: #999;
+}
+.m-goods .oldprice, .m-goods .newprice {
+  display: block;
+  text-align: left;
+}
+del {
+  text-decoration: line-through;
+}
+
+.m-goods .newprice {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+.m-goods .oldprice, .m-goods .newprice {
+  display: block;
+  text-align: left;
+}
+
+.m-goods .gooditm .col4 {
+  width: 103px;
+  text-align: center;
+}
+.u-setcount {
+  display: inline-block;
+  zoom: 1;
+  background-color: #fff;
+}
 
 
+.u-setcount .minus.z-dis, .u-setcount .plus.z-dis {
+  cursor: not-allowed;
+  color: #bcbcbc;
+  border-color: #bcbcbc;
+}
+.u-setcount .minus, .u-setcount .plus {
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #bcbcbc;
+  color: #333;
+  font-family: "iconfont";
+}
 
+.u-setcount .ipt {
+  float: left;
+  width: 43px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: #bcbcbc 1px solid;
+  border-width: 1px 0;
+}
 
+.u-setcount .minus, .u-setcount .plus {
+  float: left;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #bcbcbc;
+  color: #333;
+  font-family: "iconfont";
+}
+
+.m-goods .limitmsg {
+  text-align: center;
+  padding-top: 5px;
+  color: #e31436;
+}
+.m-goods .gooditm .col5 {
+  width: 172px;
+}
+
+.m-goods .sumrow {
+  display: block;
+}
+.m-goods .sum {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.m-goods .taxrow {
+  height: 20px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.u-taxval.z-sel, .goodtax span.z-sel {
+  color: #999;
+}
+.u-taxval {
+  display: inline-block;
+  zoom: 1;
+  text-align: left;
+  padding: 0 3px;
+  height: 17px;
+  line-height: 17px;
+  font-size: 12px;
+  color: #ccc;
+}
+.m-cartbox .col6 {
+  width: 93px;
+  padding: 0 7px;
+  text-align: left;
+}
+.u-opt {
+  display: block;
+  color: #333;
+  cursor: pointer;
+  line-height: 25px;
+  height: 25px;
+}
+
+.m-cartbox .totalbox {
+  min-height: 62px;
+  position: relative;
+  margin-top: 35px;
+}
+
+.m-total {
+  position: fixed;
+  _position: relative;
+  bottom: 0;
+  width: 1088px;
+  min-width: 820px;
+  z-index: 101;
+  border: 1px solid #eaeaea;
+}
+.m-total .ttbar {
+  height: 40px;
+  line-height: 40px;
+  padding: 10px;
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+.m-total .lt {
+  float: left;
+}
+
+.m-total .rt {
+  float: right;
+  padding-right: 140px;
+  line-height: 20px;
+  text-align: right;
+}
+
+.m-cartbox .lab {
+  color: #000;
+}
+user agent stylesheet
+label {
+  cursor: default;
+}
+
+.m-total .lt .opt {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.m-total .num {
+  color: #e31436;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.m-total .rt .itm {
+  margin-left: 20px;
+}
+.m-total .gobuy {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  bottom: 0;
+  width: 120px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #e31436;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 /*------推荐部分------*/
 .m-favrec {

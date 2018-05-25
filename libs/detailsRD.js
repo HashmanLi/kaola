@@ -202,7 +202,7 @@ define(["jquery","cookie"],function(){
                         <!--说明-->
                         <dd>
                             <div class="buyBtns">
-                                <a href="" id="buyBtn" class="j-buynow-btn buynowonly" hidefocus="true" goodsid="${this.pointjson.goodsId}" >加入购物车</a>
+                                <a  id="buyBtn" class="j-buynow-btn buynowonly" hidefocus="true" price="${this.pointjson.goods.actualCurrentPrice}" goodsid="${this.pointjson.goodsId}" >加入购物车</a>
                             </div>
                         </dd>
                     </dl>

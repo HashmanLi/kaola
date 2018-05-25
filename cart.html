@@ -27,9 +27,158 @@
         }
         //require引入（须重新配置Renderstart）
         _require(["libs/require.config"],function(){
-			_require(["cartstart"])
+            _require(["cartstart"])
+            
         })
+
+        $(function(){
+			//流氓菜单
+			$(window).scroll(function(){
+				var a = $(window).scrollTop();
+				// console.log(a);
+				if(a<1000){
+					$("#sidesCartbox").css({
+						display:"none"	
+					})}
+				if(a>=1000 && a<5400){
+					// console.log($("#sidesCartbox").position().top)
+					$("#sidesCartbox").css({
+						top:"200px",
+						position:"fixed",
+						display:"block"	
+					})
+				} 
+				if(a>=5400){
+					$("#sidesCartbox").css({
+						 top: "5600px",
+						 position: "absolute",
+						 display: "block"	
+					})
+				}
+			})
+			//多级菜单
+			// function trytre(elebox){ 
+			// 	$(elebox).has("ul").mouseover(function(){ 
+			// 	$(this).children("ul").css("display","block");  
+			// 	})
+			// 	.mouseout(function () { 
+			// 	$(this).children("ul").css("display","none"); 
+			// 	}) 
+			// 	} 
+			//三级（有bug）
+			function shady(elebox,ele){
+				var time;
+			+function(){
+					$(elebox)
+					.on("mouseenter",function(event){
+						clearTimeout(time);
+					$(event.target).siblings(ele).css({
+                        display:"block",
+                        
+					})
+				})
+					$(elebox).on("mouseleave",function(event){
+					time = setTimeout(function(){
+						$(event.target).siblings(ele).css({
+							display:"none",
+						})
+					}.bind(this),150)	
+				})
+
+					$(ele)
+					.on("mouseenter",function(event){
+					clearTimeout(time);
+					$(ele)
+					.css({
+                        display:"block",
+                        
+					})	
+				})
+				
+					$(ele).on("mouseleave",function(event){
+						$(ele).css({display:"none"})
+				})
+				}.bind(this)()
+			}
+
+
+			//三级测试
+			function shady1(elebox,ele){
+				var time;
+			+function(){
+					$(elebox)
+					.on("mouseenter",function(event){
+						clearTimeout(time);
+					$(event.target).children(ele).css({
+						display:"block",
+					})
+				})
+					$(elebox).on("mouseleave",function(event){
+					time = setTimeout(function(){
+						$(event.target).children(ele).css({
+							display:"none",
+						})
+					}.bind(this),150)	
+				})
+
+					$(ele)
+					.on("mouseenter",function(event){
+					clearTimeout(time);
+					$(event.target)
+					.css({
+						display:"block",
+					})	
+				})
+				
+					$(ele).on("mouseleave",function(event){
+						$(event.target).css({display:"none"})
+				})
+				}.bind(this)()
+			}
+			//头部菜单
+			var time;
+		    $(".topNavHolder").on("mouseenter",function(event){
+			// console.log($(event.target).find(".shadow"))
+				$(event.target).siblings(".shadow").css({
+					display:"block",
+					background:"#fff",
+					"z-index":"80"
+				})
+			})
+			$(".topNavHolder").on("mouseleave",function(event){
+			// console.log($(event.target).siblings(".shadow"))
+			 time = setTimeout(function(){
+				$(event.target).siblings(".shadow").css({
+					display:"none",
+					background:"#fff",
+					"z-index":"80"
+				})
+			}.bind(this),150)	
+			})
+			$(".shadow").on("mouseenter",function(event){
+				clearTimeout(time);
+				$(event.target).siblings(".shadow").css({
+					display:"block",
+					background:"#fff",
+					"z-index":"104"
+				})
+			})
+			$(".shadow").on("mouseleave",function(event){
+					$(".shadow").css({
+					display:"none",
+					background:"#fff",
+					"z-index":"104"
+				})
+			})
+
+			shady(".topCatslevel","#topList");
+			shady(".shadowList",".miss_cat");
+			// // trytre(".topCatslevel")
+		})
+		
         </script>
+        
+
     <!--nav-->
         <nav id="topNav">
                 <div id="topNavwarp">
@@ -71,7 +220,7 @@
                             <i class="arr"></i>	
                             </a>
                             <span class="sep">|</span>
-                            <div class="shadow">
+                            <div class="shadow" >
                                 <a>
                                     <span class="cnt">我的优惠劵</span>
                                 </a>
@@ -173,7 +322,7 @@
                 </ul>
                 </div>
             </nav>
-        <header id="docHead" class="j-indexTopFixed">
+        <header id="docHead" style="z-index: 70;" class="j-indexTopFixed">
                 <div id="docHeadWrap">
                     <a href="Activeindex.html" class="kaolalogo"></a>
                 </div>
@@ -187,7 +336,11 @@
                         </p>
                     </div>
                 </div> -->
-                <div class="m-cart">
+
+
+
+
+                <!-- <div class="m-cart">
                     <div class="ware">
                         <input type="checkbox" class="u-chk" name="cartAll" checked="checked">
                         <b class="u-cartlabel">自营</b>
@@ -212,21 +365,76 @@
                                             <a href="" class="imgwrap">
                                                 <img src="//haitao.nosdn1.127.net/30e3fdf5bae5493598b736074bb9367e1522313160037jfc9y7uh20779.jpg?imageView&thumbnail=80x0&quality=85" alt="">
                                             </a>
+                                            <div class="txtwrap">
+                                                <h3 class="goodtlt">
+                                                    <a href="" title="Whoo 后 白善土面膜泥 拱辰享热清肌面膜 80毫升">
+                                                            Whoo 后 白善土面膜泥 拱辰享热清肌面膜 80毫升
+                                                    </a>
+                                                </h3>
+                                                <p class="returninfo f-toe" title="支持7天无忧退货">
+                                                    <img src="//haitao.nos.netease.com/testj43rhf7510001.png" alt="">
+                                                    <span class> 支持7天无忧退货</span>
+                                                </p>
+                                                <div class="goodtax f-vama"></div>
+                                            </div>
                                         </div>
-                                        <div class="txtwrap">
-                                            <h3 class="goodtlt">
-                                                <a href="" title="Whoo 后 白善土面膜泥 拱辰享热清肌面膜 80毫升">
-                                                        Whoo 后 白善土面膜泥 拱辰享热清肌面膜 80毫升
-                                                </a>
-                                            </h3>
-                                            <p class="returninfo f-toe" title="支持7天无忧退货"></p>
-                                        </div>
+                                       <div class="col col3">
+                                           <del class="oldprice">310.00</del>
+                                           <div class="newprice">
+                                               <span>298.00</span>
+                                           </div>
+                                       </div>
+                                       <div class="col col4">
+                                           <span class="u-setcount">
+                                               <span class="minus z-dis"></span>
+                                               <input type="text" class="ipt" value="1" max=99>
+                                               <span class="plus"></span>
+                                           </span>
+                                           <p class="limitmsg"></p>
+                                       </div>
+                                       <div class="col col5">
+                                           <span class="sum sumrow">298.00</span>
+                                           <p class="taxrow f-vama">
+                                               <span class="u-taxval z-sel">
+                                                预估税费:￥26.7
+                                               </span>
+                                           </p>
+                                       </div>
+                                       <div class="col col6">
+                                           <a class="u-opt">删除</a>
+                                           <span class="u-opt">移入我的收藏</span>
+                                       </div>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
+                <div class="totalbox">
+                        <div class="m-total f-cb" id="totalbar" style="position: relative; width: 1088px;">
+                            <div class="ttbar">
+                                <div class="lt">
+                                    <input type="checkbox" name="selectAll" id="selectAll" class="u-chk" checked="checked">
+                                    <label for="selectAll" class="lab">全选</label>
+                                    <b class="opt">删除选中的商品</b>
+                                </div>
+                                <div class="rt">
+                                    <p class="allgoods">
+                                        已选商品 
+                                        <em class="num" id="numsum"></em>
+                                        件
+                                        <span class="itm">
+                                            总价(不含运费)：￥
+                                            <em class="num" id="pricesum">
+                                                
+                                            </em>
+                                        </span>
+                                    </p>
+                                    <a class="gobuy">去结算</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div id="guess" class="newRecomWrap m-favrec">
                 <h4 class="newRecomTitle">猜你喜欢<b>根据你的浏览记录推荐的商品</b></h4>

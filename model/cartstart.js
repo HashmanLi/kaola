@@ -1,5 +1,6 @@
-define(["cookie","mycartcookie","cartRD"],function(cookie,mycartcookie,cartRD){
-    new mycartcookie("#buyBtn");
+define(["cookie","mycartcookie","cartRD","detailsRD"],function(cookie,mycartcookie,cartRD,detailsRD){
     var url = "http://localhost:83/kaola";
-    new cartRD(".m-cartbox",url);
+    // new detailsRD("#j-producthead",url);
+    new mycartcookie("#j-producthead");
+    new cartRD("#cartbox",url);
 });

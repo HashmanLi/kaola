@@ -7,10 +7,11 @@ requirejs.config({
         "dtStart":"./model/dtStart",
         "cookie":"./libs/jquery.cookie",
         "mycookie":"./libs/mycookie",
+        "mycartcookie":"./libs/mycartcookie",
         "detailsRD":"./libs/detailsRD",
         "Renderstart": "./model/Renderstart",
         "Rendering": "./libs/Rendering",
-        "mycartcookie":"./libs/mycartcookie",
+        "cartstart":"./model/cartstart",
         "cartRD":"./libs/cartRD",
         "scroll":"./model/ScRoll"
     }
